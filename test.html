@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+	
+	<div id=mainDiv>
+		<!-- Etiqueta del camp-->
+		<label for="nom_assignatura">Assignatura: </label>
+		<input id="nom_assignatura" name="nom_assignatura" 
+			type="text" list="assignatura"/>
+
+		<!-- Aqui llistem totes les possibles opcions d'autocompleció de l'input.
+			 Son totes les assignatures del grau.-->
+		<datalist id="assignatura">
+			<option value="A"></option>
+			<option value="AA"></option>
+			<option value="ABD"></option>
+			<option value="AC"></option>
+			<option value="AC2"></option>
+			<option value="ADEI"></option>
+			<option value="APSS"></option>
+			<option value="AS"></option>
+			<option value="ASDP"></option>
+			<option value="ASMI"></option>
+			<option value="ASO"></option>
+			<option value="ASW"></option>
+			<option value="BD"></option>
+			<option value="CASO"></option>
+			<option value="CBDE"></option>
+			<option value="CDI"></option>
+			<option value="CI"></option>
+			<option value="CL"></option>
+			<option value="CN"></option>
+			<option value="DBD"></option>
+			<option value="DSBM"></option>
+			<option value="DSI"></option>
+			<option value="EC"></option>
+			<option value="ECSDI"></option>
+			<option value="EDA"></option>
+			<option value="EEE"></option>
+			<option value="ER"></option>
+			<option value="F"></option>
+			<option value="FDM"></option>
+			<option value="FM"></option>
+			<option value="FOMAR"></option>
+			<option value="G"></option>
+			<option value="GPS"></option>
+			<option value="IA"></option>
+			<option value="IC"></option>
+			<option value="IDI"></option>
+			<option value="IES"></option>
+			<option value="IM"></option>
+			<option value="LI"></option>
+			<option value="LP"></option>
+			<option value="M1"></option>
+			<option value="M2"></option>
+			<option value="MI"></option>
+			<option value="MP"></option>
+			<option value="NE"></option>
+			<option value="PAE"></option>
+			<option value="PAP"></option>
+			<option value="PAR"></option>
+			<option value="PCA"></option>
+			<option value="PE"></option>
+			<option value="PEC"></option>
+			<option value="PES"></option>
+			<option value="PI"></option>
+			<option value="PRO1"></option>
+			<option value="PRO2"></option>
+			<option value="PROP"></option>
+			<option value="PSI"></option>
+			<option value="PTI"></option>
+			<option value="ROB"></option>
+			<option value="SDX"></option>
+			<option value="SI"></option>
+			<option value="SID"></option>
+			<option value="SIM"></option>
+			<option value="SIO"></option>
+			<option value="SLDS"></option>
+			<option value="SO"></option>
+			<option value="SO2"></option>
+			<option value="SOA"></option>
+			<option value="STR"></option>
+			<option value="TC"></option>
+			<option value="TGA"></option>
+			<option value="TXC"></option>
+			<option value="VC"></option>
+			<option value="VJ"></option>
+			<option value="WSE"></option>
+			<option value="XC"></option>
+			<option value="XC2"></option>
+		</datalist>
+
+		<!-- Boto de submit-->
+		<button onclick="submitAssignatura()">Selecciona</button>
+
+		<label id="resultat">Holatitus</label>
+	</div>
+
+	<script src="scriptNotes.js"></script>
+</body>
+</html>
+
+
