@@ -1,0 +1,6 @@
+Idea: existeix funcio de generacio de inputs (genera tants quadres de input com 
+evaluacions hi hagi per la assignatura).
+
+Tenim 3 vectors de 10 posicions cada un (perque no sabem quants actes de cada acte
+evaluatiu hi ha), un per a cada tipus: teorics, laboratori i un extra de miscellania.
+
