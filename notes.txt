@@ -4,3 +4,6 @@ evaluacions hi hagi per la assignatura).
 Tenim 3 vectors de 10 posicions cada un (perque no sabem quants actes de cada acte
 evaluatiu hi ha), un per a cada tipus: teorics, laboratori i un extra de miscellania.
 
+
+WHAT TO DO NEXT DAY: crec que el tema dels botons i inputs generats/netejats ja funciona. Ara farmejar assignatura a assignatura. També has de mirar si els continguts dels inputs html quan tractes amb el calcul de notes es string o enter. 
+Utilitza typeof.
