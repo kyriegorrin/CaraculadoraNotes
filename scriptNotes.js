@@ -1,8 +1,14 @@
-//Creació contenidors pertinents de notes
+//Creació contenidors globals pertinents dels elements HTML dels inputs de les notes
 var inputParcials = [];
 var inputLabos = [];
 var inputMisc = [];
 var inputFinals = [];
+
+//Creació de contenidors de floats de les notes que contenen els inputs anteriors
+var notesParcials = [];
+var notesLabos = [];
+var notesMisc = [];
+var notesFinals = [];
 
 //Aquesta funció bàsicament serà un switch criminalment llarg, però com que no tenim
 //API per als mètodes avaluatius i fer scrapping no és viable, és lo que hay. 
@@ -129,14 +135,37 @@ function clearDivsAndContainers(){
 		}
 	}
 
-	//Fem clear de la nota calculada
+	//Fem clear de la nota calculada i els comentaris associats
 	document.getElementById("div_nota").innerHTML = "";
+	document.getElementById("div_comentaris").innerHTML = ""
 
-	//Clear dels arrays
+	//Clear dels arrays d'elements i notes
 	inputParcials = [];
 	inputLabos = [];
 	inputMisc = [];
 	inputFinals = [];
+
+	notesParcials = [];
+	notesLabos = [];
+	notesMisc = [];
+	notesFinals = [];	
+}
+
+//Aquesta funció tracta els arrays globals de inputs i exporta els seus valors 
+//numèrics als arrays globals de notes. Fem cast a float.
+function exportToNumbers(){
+	for(i = 0; i < inputParcials.length(); ++i){
+		notesParcials.push(parseFloat(inputParcials[i].value));
+	}
+	for(i = 0; i < inputLabos.length(); ++i){
+		notesLabos.push(parseFloat(inputLabos[i].value));
+	}
+	for(i = 0; i < inputMisc.length(); ++i){
+		notesMisc.push(parseFloat(inputMisc[i].value));
+	}
+	for(i = 0; i < inputFinals.length(); ++i){
+		notesFinals.push(parseFloat(inputFinals[i].value));
+	}
 }
 
 //La funció agafa els inputs dels vectors d'elements passats per paràmetre i computa la nota depenent de l'assignatura.
@@ -148,10 +177,19 @@ function computaNota(){
 	//Nota calculada
 	var nota;
 
+	//Exportem els continguts dels inputs als arrays de notes en floats
+	exportToNumbers();
+
+	//Calculs de les notes per cada assignatura. Pilla unes quantes birres que va per llarg.
 	switch(assignatura){
 		//Algorismia
 		case "A":
+
+			break;
 	}
+
+	//Mostrem nota TESTING PURPOSES DE MOMENT
+	document.getElementById("div_nota").innerHTML = typeof(inputParcials[0].value);
 
 	//DEBUGGING DE VARIABLES GLOBALS
 	console.log(inputParcials.length);
