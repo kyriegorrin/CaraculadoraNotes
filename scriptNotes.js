@@ -118,7 +118,7 @@ function submitAssignatura(){
 }
 
 //Funció que neteja el contingut dels divs contenidors dels inputs i els
-//arrays globals que contenen les notes.
+//arrays globals que contenen les notes. És un clear general.
 function clearDivsAndContainers(){
 	var divParcials = document.getElementById("div_parcials");
 	var divLabos = document.getElementById("div_labos");
@@ -151,19 +151,28 @@ function clearDivsAndContainers(){
 	notesFinals = [];	
 }
 
+//Funció que agafa els vectors dels valors de les notes i els neteja
+//Necessari per a recomputar les notes i que no passin marrons raros.
+function clearNotes(){
+	notesParcials = [];
+	notesLabos = [];
+	notesMisc = [];
+	notesFinals = [];
+}
+
 //Aquesta funció tracta els arrays globals de inputs i exporta els seus valors 
 //numèrics als arrays globals de notes. Fem cast a float.
 function exportToNumbers(){
-	for(i = 0; i < inputParcials.length(); ++i){
+	for(i = 0; i < inputParcials.length; ++i){
 		notesParcials.push(parseFloat(inputParcials[i].value));
 	}
-	for(i = 0; i < inputLabos.length(); ++i){
+	for(i = 0; i < inputLabos.length; ++i){
 		notesLabos.push(parseFloat(inputLabos[i].value));
 	}
-	for(i = 0; i < inputMisc.length(); ++i){
+	for(i = 0; i < inputMisc.length; ++i){
 		notesMisc.push(parseFloat(inputMisc[i].value));
 	}
-	for(i = 0; i < inputFinals.length(); ++i){
+	for(i = 0; i < inputFinals.length; ++i){
 		notesFinals.push(parseFloat(inputFinals[i].value));
 	}
 }
@@ -184,12 +193,32 @@ function computaNota(){
 	switch(assignatura){
 		//Algorismia
 		case "A":
-
+			if(notesParcials[0] >= 3.0){//Assumim que va per continua
+				nota = 0.7*(0.5*notesParcials[0] + 0.5*notesParcials[1]) +
+						0.1*notesMisc[0] + 0.2*notesLabos[0];
+			}
+			else{//Va per examen final
+				nota = 0.7*notesFinals[0] + 0.1*notesMisc[0] + 0.2*notesLabos[0];
+			}
 			break;
+
+		//Ampliació d'Algorismia	
+		case "AA":
+			nota = 0.3*notesMisc[0] + 0.7*notesFinals[0];
+			break;
+
+		//Administració de Bases de Dades
+		case "ABD":
+			
+			break;
+
 	}
 
+	//Fem un clear dels contenidors dels valors de les notes (per si tornem a recomputar-les)
+	clearNotes();
+
 	//Mostrem nota TESTING PURPOSES DE MOMENT
-	document.getElementById("div_nota").innerHTML = typeof(inputParcials[0].value);
+	document.getElementById("div_nota").innerHTML = nota.toFixed(2);
 
 	//DEBUGGING DE VARIABLES GLOBALS
 	console.log(inputParcials.length);
