@@ -24,6 +24,10 @@ function submitAssignatura(){
 	//Agafem el nom de l'assignatura seleccionada
 	var nomAssig = document.getElementById("nom_assignatura").value;
 
+	//Mostrem comentaris que creiem convenients de l'assignatura
+	if(dictComentaris[nomAssig] != undefined)
+		document.getElementById("div_comentaris").innerHTML = dictComentaris[nomAssig];
+
 	//numAvaluacions és un array[0..3] que conté el numero d'actes avaluatius de cada tipus
 	var numAvaluacions = document.querySelector("option[value="+nomAssig+"]").innerHTML;
 	numAvaluacions = String(numAvaluacions).split(",");
@@ -125,10 +129,10 @@ function clearDivsAndContainers(){
 	var divMisc = document.getElementById("div_misc");
 	var divFinals = document.getElementById("div_finals");
 
-	//L'array és per fer menys codi després quan apliquem el tractament a tots els divs
+	//L'array és per fer menys codi després quan apliquem el tractament a tots els divs de inputs
 	var arrayDivs = [divParcials, divLabos, divMisc, divFinals];
 
-	//Netejem tots els divs
+	//Netejem tots els divs de inputs
 	for(i = 0; i < arrayDivs.length; i++){
 		while(arrayDivs[i].firstChild){
 			arrayDivs[i].removeChild(arrayDivs[i].firstChild);
@@ -137,7 +141,7 @@ function clearDivsAndContainers(){
 
 	//Fem clear de la nota calculada i els comentaris associats
 	document.getElementById("div_nota").innerHTML = "";
-	document.getElementById("div_comentaris").innerHTML = ""
+	document.getElementById("div_comentaris").innerHTML = "";
 
 	//Clear dels arrays d'elements i notes
 	inputParcials = [];
@@ -209,7 +213,13 @@ function computaNota(){
 
 		//Administració de Bases de Dades
 		case "ABD":
-			
+			nota = 0.4*notesLabos[0] + 0.4*notesFinals[0] + 0.2*notesMisc[0];
+			break;
+
+		//Arquitectura de Computadors
+		case "AC":
+			nota = 0.15*notesParcials[0] + 0.25*notesParcials[1] + 0.4*notesParcials[2] +
+					0.2*notesLabos[0] + 0.1*notesMisc[0];
 			break;
 
 	}
@@ -217,8 +227,8 @@ function computaNota(){
 	//Fem un clear dels contenidors dels valors de les notes (per si tornem a recomputar-les)
 	clearNotes();
 
-	//Mostrem nota TESTING PURPOSES DE MOMENT
-	document.getElementById("div_nota").innerHTML = nota.toFixed(2);
+	//Mostrem nota
+	document.getElementById("div_nota").innerHTML = nota.toFixed(2);	
 
 	//DEBUGGING DE VARIABLES GLOBALS
 	console.log(inputParcials.length);
