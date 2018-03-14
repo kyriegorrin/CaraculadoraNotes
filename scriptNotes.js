@@ -245,7 +245,8 @@ function computaNota(){
 
 		//Habilitats Acadèmiques Pel Desenvolupament de Projectes en Anglès
 		case "ASDP":
-			
+			nota = Math.max(0.25*notesParcials[0] + 0.05*notesMisc[0], 0.2*notesParcials[0] + 0.1*notesMisc[0]) +
+					0.25*notesParcials[1] + 0.25*notesLabos[0] + 0.20*notesMisc[1];
 			break;
 	}
 
