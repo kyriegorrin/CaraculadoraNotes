@@ -132,7 +132,7 @@ function clearDivsAndContainers(){
 	//L'array és per fer menys codi després quan apliquem el tractament a tots els divs de inputs
 	var arrayDivs = [divParcials, divLabos, divMisc, divFinals];
 
-	//Netejem tots els divs de inputs
+	//Netejem tots els divs d'inputs
 	for(i = 0; i < arrayDivs.length; i++){
 		while(arrayDivs[i].firstChild){
 			arrayDivs[i].removeChild(arrayDivs[i].firstChild);
@@ -222,6 +222,31 @@ function computaNota(){
 					0.2*notesLabos[0] + 0.1*notesMisc[0];
 			break;
 
+		//Arquitectura de Computadors 2
+		case "AC2":
+			nota = 0.2*notesLabos[0] + Math.max(0.8*notesFinals[0], 0.65*notesFinals[0] + 0.15*notesParcials[0]);
+			break;
+
+		//Anàlisi de Dades i Explotació de la Informació
+		case "ADEI":
+			nota = 0.4*notesMisc[0] + 0.3*notesParcials[0] + 0.3*notesLabos[0];
+			break;
+
+		//Habilitats Acadèmiques i Professionals d'Expressió Oral en Anglès
+		case "APSS":
+			nota = Math.max(0.25*notesParcials[0] + 0.05*notesMisc[0], 0.2*notesParcials[0] + 0.1*notesMisc[0]) +
+					0.25*notesMisc[1] + 0.20*notesMisc[2] + 0.25*notesFinals[0];
+			break;
+
+		//Arquitectura del Software
+		case "AS":
+			nota = 0.3*notesParcials[0] + 0.3*notesParcials[1] + 0.3*notesParcials[2] + 0.1*notesMisc[0];
+			break;
+
+		//Habilitats Acadèmiques Pel Desenvolupament de Projectes en Anglès
+		case "ASDP":
+			
+			break;
 	}
 
 	//Fem un clear dels contenidors dels valors de les notes (per si tornem a recomputar-les)
