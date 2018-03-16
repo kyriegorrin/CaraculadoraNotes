@@ -5,4 +5,4 @@ Tenim 3 vectors de 10 posicions cada un (perque no sabem quants actes de cada ac
 avaluatiu hi ha), un per a cada tipus: teorics, laboratori i un extra de miscellania.
 
 
-WHAT TO DO NEXT DAY: Ves tirant. Quan trobis ua llista alfabetica amb totes les assignatures, AFEGEIX les que faltin.
+WHAT TO DO NEXT DAY: ACABA ASO.

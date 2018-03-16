@@ -20,3 +20,11 @@ dictComentaris["AS"] = "[Nota auxiliar: nota total dels qüestionaris]";
 
 dictComentaris["ASDP"] = "[Nota auxiliar 1: nota participació], [Nota auxiliar 2: nota treballs], [Nota laboratori: nota projecte]";
 
+dictComentaris["ASMI"] = "ASMI no te examens parcials de per sí, totes les seves notes són de treballs i activitats diverses.<br/>" + 
+							"Si la nota contínua és inferior a 6, es fa un examen final. Les diferents notes són les següents:<br/>" +
+							"[Nota auxiliar 1: treball i exposició en públic]<br/>" + 
+							"[Nota auxiliar 2: lectura i recensió de llibres<br/>" +
+							"[Nota auxiliar 3: casos d'ètica<br/>" +
+							"[Nota auxiliar 4: altres elements avaluatius]<br/>" + 
+							"[Nota final: examen final si es fa]";
+

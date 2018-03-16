@@ -248,6 +248,18 @@ function computaNota(){
 			nota = Math.max(0.25*notesParcials[0] + 0.05*notesMisc[0], 0.2*notesParcials[0] + 0.1*notesMisc[0]) +
 					0.25*notesParcials[1] + 0.25*notesLabos[0] + 0.20*notesMisc[1];
 			break;
+
+		//Aspectes Socials i Mediambientals de la Informàtica
+		case "ASMI":
+			nota = 0.35*notesMisc[0] + 0.20*notesMisc[1] + 0.20*notesMisc[2] + 0.25*notesMisc[3];
+			if(nota < 6){
+				nota = 0.5*nota + 0.5*notesFinals[0];
+			}
+			break;
+
+		//Administració de sistemes operatius
+		case "ASO":
+			break;
 	}
 
 	//Fem un clear dels contenidors dels valors de les notes (per si tornem a recomputar-les)
