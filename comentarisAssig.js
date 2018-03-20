@@ -28,3 +28,13 @@ dictComentaris["ASMI"] = "ASMI no te examens parcials de per sí, totes les seve
 							"[Nota auxiliar 4: altres elements avaluatius]<br/>" + 
 							"[Nota final: examen final si es fa]";
 
+dictComentaris["ASO"] = "Si la mitja de notes de parcials és superior o igual a 5, es computa la nota total amb aquesta.<br/>"
+						"En cas contrari, es computa utilitzant la nota final.";
+
+dictComentaris["ASW"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota parcial 1: control teoria 1]<br/>" +
+						"[Nota parcial 2: control teoria 2]<br/>" + 
+						"[Nota auxiliar 1: nota presentació 1]<br/>" +
+						"[Nota auxiliar 2: nota presentació 2]<br/>" +
+						"[Nota laboratori 1: nota IntroLab]<br/>" +
+						"[Nota laboratori 2: nota projecte]";

@@ -258,7 +258,20 @@ function computaNota(){
 			break;
 
 		//Administració de sistemes operatius
-		case "ASO":
+		case "ASO":			
+			nota = Math.max((0.25*notesParcials[0] + 0.25*notesParcials[1] + 0.5*notesParcials[2]), notesFinals[0])*0.4 +
+				0.5*notesLabos[0] + 0.1*notesMisc[0];		
+			break;
+
+		//Aplicacions i Serveis Web
+		case "ASW":
+			nota = 0.5*(0.3*notesParcials[0] + 0.3*notesParcials[1] + 0.2*notesMisc[0] + 0.2*notesMisc[1]) +
+					0.5*(0.35*notesLabos[0] + 0.65*notesLabos[1]);
+			break;
+		
+		//Bases de Dades
+		case "BD":
+			
 			break;
 	}
 
