@@ -38,3 +38,8 @@ dictComentaris["ASW"] = "Les diferents notes dels actes avaluatius són les seg�
 						"[Nota auxiliar 2: nota presentació 2]<br/>" +
 						"[Nota laboratori 1: nota IntroLab]<br/>" +
 						"[Nota laboratori 2: nota projecte]";
+
+dictComentaris["BD"] = "Assumim que la nota de les preguntes d'inici de laboratori és superior a 5.<br/>" +
+			"La nota mitjana de problemes entregats es posa a nota auxiliar 1.";
+
+dictComentaris["CASO"] = "[Nota auxiliar 1: nota informes de seguiment]";

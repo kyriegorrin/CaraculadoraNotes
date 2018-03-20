@@ -271,7 +271,14 @@ function computaNota(){
 		
 		//Bases de Dades
 		case "BD":
-			
+			var notaLab = 0.4*notesLabos[0] + 0.3*notesLabos[1] + 0.3*notesLabos[2];
+			nota = Math.max(0.15*notesMisc[0] + 0.25*notaLab + 0.60*notesFinals[0], 0.25*notaLab + 0.75*notesFinals[0]);
+			break;
+		
+		//Conceptes Avançats de Sistemes Operatius
+		case "CASO":
+			nota = 0.4*(Math.max(0.25*notesParcials[0] + 0.25*notesParcials[1] + 0.5*notesParcials[2], notesFinals[0])) +
+				0.5*notesLabos[0] + 0.1*notesMisc[0];
 			break;
 	}
 
