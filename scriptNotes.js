@@ -280,6 +280,21 @@ function computaNota(){
 			nota = 0.4*(Math.max(0.25*notesParcials[0] + 0.25*notesParcials[1] + 0.5*notesParcials[2], notesFinals[0])) +
 				0.5*notesLabos[0] + 0.1*notesMisc[0];
 			break;
+
+		//Conceptes per a Bases de Dades Especialitzades
+		case "CBDE": 
+			nota = 0.7*(Math.min(10, notesLabos[0])) + 0.2*notesParcials[0] + 0.1*notesMisc[0];
+			break;
+
+		//Compressió de Dadess i Imatges
+		case "CDI":
+			nota = 0.3*notesParcials[0] + 0.3*notesParcials[1] + 0.4*notesLabos[0];
+			break;
+
+		//Interficies de Computadors
+		case "CI":
+			nota = 0.7*notesParcials[0] + 0.3*notesLabos[0];
+			break;
 	}
 
 	//Fem un clear dels contenidors dels valors de les notes (per si tornem a recomputar-les)
