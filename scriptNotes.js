@@ -295,6 +295,16 @@ function computaNota(){
 		case "CI":
 			nota = 0.7*notesParcials[0] + 0.3*notesLabos[0];
 			break;
+
+		//Compiladors
+		case "CL":
+			nota = 0.25*notesLabos[0] + 0.3*notesLabo[1] + 0.45*notesParcials[0];
+			break;
+
+		//Computació Numèrica
+		case "CN":
+			nota = 0.2*notesParcials[0] + 0.2*notesMisc[0] + 0.2*notesLabos[0] + 0.4*notesFinals[0];
+			break;
 	}
 
 	//Fem un clear dels contenidors dels valors de les notes (per si tornem a recomputar-les)

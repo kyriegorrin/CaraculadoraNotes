@@ -45,3 +45,9 @@ dictComentaris["BD"] = "Assumim que la nota de les preguntes d'inici de laborato
 dictComentaris["CASO"] = "[Nota auxiliar 1: nota informes de seguiment]";
 
 dictComentaris["CI"] = "No disposem de les ponderacions dels 3 examens parcials, així que computem només la nota final dels parcials.";
+
+dictComentaris["CN"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota parcial: nota dels examens teorics]<br/>" +
+						"[Nota auxiliar: nota de les pràctiques]<br/>" +
+						"[Nota laboratori: nota de sessions de laboratori]<br/>" +
+						"[Nota final: nota de l'examen final de problemes]";
