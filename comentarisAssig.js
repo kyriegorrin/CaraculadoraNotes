@@ -51,3 +51,35 @@ dictComentaris["CN"] = "Les diferents notes dels actes avaluatius són les segü
 						"[Nota auxiliar: nota de les pràctiques]<br/>" +
 						"[Nota laboratori: nota de sessions de laboratori]<br/>" +
 						"[Nota final: nota de l'examen final de problemes]";
+
+dictComentaris["DBD"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota auxiliar: nota d'avaluació mútua]<br/>" +
+						"[Nota laboratori: nota de sessions de laboratori i qüestionaris]<br/>" +
+						"[Nota final: nota de l'examen final]";
+
+dictComentaris["DSBM"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota parcial: nota de les proves de teoria]<br/>" +
+						"[Nota laboratori: nota final de laboratori]<br/>" +
+						"[Nota final: nota del projecte final]";
+
+dictComentaris["DSI"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota auxiliar 1: nota de participació]<br/>" +
+						"[Nota laboratoris 1: nota dels qüestionaris i exercicis]<br/>" +
+						"[Nota laboratoris 2: nota del cas d'estudi]<br/>" +
+						"[Nota laboratoris 3: nota del treball de recerca d'informació]";
+						
+dictComentaris["EC"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota parcial: nota del parcial]<br/>" +
+						"[Nota laboratoris 1: nota d'avaluació continuada del laboratori]<br/>" +
+						"[Nota laboratoris 2: nota de l'examen final de laboratori]<br/>" +
+						"[Nota final: nota de l'examen final]";
+
+dictComentaris["EDA"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota parcial: nota del parcial de paper]<br/>" +
+						"[Nota laboratoris: nota del parcial d'ordinador]<br/>" +
+						"[Nota auxiliar: nota del joc]<br/>" +
+						"[Nota final: nota de l'examen final]";
+
+dictComentaris["EEE"] = "S'assumeix que tens el punt de participació a classe.<br/>" +
+						"Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota parcial: nota de cada PEC]";

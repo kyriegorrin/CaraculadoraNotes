@@ -305,6 +305,48 @@ function computaNota(){
 		case "CN":
 			nota = 0.2*notesParcials[0] + 0.2*notesMisc[0] + 0.2*notesLabos[0] + 0.4*notesFinals[0];
 			break;
+
+		//Disseny de Bases de Dades
+		case "DBD":
+			nota = 0.7*Math.min(10, notesLabos[0]) + 0.2*notesFinals[0] + 0.1*notesMisc[0];
+			break;
+
+		//Disseny de Sistemes Basats en Microcontroladors
+		case "DSBM":
+			nota = 0.1*notesParcials[0] + 0.1*notesParcials[1] + 0.1*notesParcials[2] + 0.1*notesParcials[3] +
+					0.4*notesLabos[0] + 0.2*notesFinals[0];
+			break;
+
+		//Disseny de Sistemes d'Informació
+		case "DSI":
+			nota = 0.35*notesLabos[0] + 0.25*notesLabos[1] + 0.30*notesLabos[2] + 0.10*notesMisc[0];
+			break;
+
+		//Estructura de Computadors
+		case "EC":
+			nota = Math.max(0.2*notesParcials[0] + 0.6*notesFinals[0], 0.8*notesFinals[0]) + 
+					0.2*(0.15*notesLabos[0] + 0.85*notesLabos[1]);
+			break;
+
+		//Enginyeria del Coneixement i Sistemes Distribuits Inteligents (ostia puta)
+		case "ECSDI":
+			nota = Math.max(0.2*notesParcials[0] + 0.4*notesFinals[0], 0.6*notesFinals[0]) + 0.4*notesLabos[0];
+			break;
+
+		//Estructures de Dades Avançades
+		case "EDA":
+			nota = Math.min(10, Math.max(0.3*notesParcials[0] + 0.3*notesLabos[0] + 0.3*notesFinals[0] + 0.2*notesMisc[0],
+					0.3*notesLabos[0] + 0.6*notesFinals[0] + 0.2*notesMisc[0]));
+			break;
+
+		//Empresa i Entorn Econòmic
+		case "EEE":
+			nota = 0;
+			for(i = 0; i < 6; ++i){
+				nota += 0.15*notesParcials[0];
+			}
+			nota += 1;//Assumim que tens el punt de participació
+			break;
 	}
 
 	//Fem un clear dels contenidors dels valors de les notes (per si tornem a recomputar-les)
