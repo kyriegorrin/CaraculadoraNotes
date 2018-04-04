@@ -83,3 +83,25 @@ dictComentaris["EDA"] = "Les diferents notes dels actes avaluatius són les seg�
 dictComentaris["EEE"] = "S'assumeix que tens el punt de participació a classe.<br/>" +
 						"Les diferents notes dels actes avaluatius són les següents: <br/>" +
 						"[Nota parcial: nota de cada PEC]";
+
+dictComentaris["ER"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota parcial: nota final de tots els teus parcials]<br/>" +
+						"[Nota laboratoris: nota del projecte]<br/>" +
+						"[Nota auxiliar: nota dels exercicis i qüestionaris]";
+
+dictComentaris["FM"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota parcial: nota final de tots els teus parcials]<br/>" +
+						"[Nota auxiliar: nota final dels tallers]<br/>" +
+						"[Nota final: nota de l'examen final]";						
+
+dictComentaris["GPS"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota auxiliar: nota final dels qüestionaris de classe]<br/>" +
+						"[Nota laboratoris 1: nota del projecte 1]<br/>" +
+						"[Nota laboratoris 2: nota del projecte 2]<br/>" +
+						"[Nota final: nota de l'examen final]";
+
+dictComentaris["IA"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota parcial: nota del parcial]<br/>" +
+						"[Nota auxiliar: nota del treball d'innovació]<br/>" +
+						"[Nota laboratori: nota de sessions de laboratori]<br/>" +
+						"[Nota final: nota de l'examen final]";

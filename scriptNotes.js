@@ -182,7 +182,7 @@ function exportToNumbers(){
 }
 
 //La funció agafa els inputs dels vectors d'elements passats per paràmetre i computa la nota depenent de l'assignatura.
-//En realitat és un switch glorificat putament llarg.
+//En realitat és un switch glorificat putament llarg. És on vindràs a canviar el càlcul de notes si escau.
 function computaNota(){
 	//Assignatura que tractem
 	var assignatura = document.getElementById("nom_assignatura").value;
@@ -346,6 +346,63 @@ function computaNota(){
 				nota += 0.15*notesParcials[0];
 			}
 			nota += 1;//Assumim que tens el punt de participació
+			break;
+
+		//Enginyeria de Requisits
+		case "ER":
+			nota = 0.25*notesParcials[0] + 0.25*notesMisc[0] + 0.5*notesLabos[0];
+			break;
+
+		//Física
+		case "F":
+			nota = 0.1*notesLabos[0] + 0.9*Math.max(0.25*notesParcials[0] + 0.25*notesParcials[1] + 0.25*notesParcials[2] + 0.25*notesParcials[3], notesFinals[0]);
+			break;
+
+		//Física dels Dispositius de Memòria
+		case "FDM":
+			//TODO
+			break;
+
+		//Fonaments Matemàtics
+		case "FM":
+			nota = 0.2*notesParcials[0] + 0.2*notesParcials[1] + 0.2*notesMisc[0] + 0.4*notesFinals[0];
+			break;
+
+		//Fisica Orientada a Animacrió Realista
+		case "FOMAR":
+			nota = 0.5*Math.max(0.25*notesParcials[0]+0.75*notesFinals[0], notesFinals[0]) + 0.5*notesLabos[0];
+			break;
+
+		//Gràfics
+		case "G":
+			nota = 0.25*notesLabos[0] + 0.25*notesLabos[1] + 0.5*notesFinals[0];
+			break;
+
+		//Gestió de Projectes de Software
+		case "GPS":
+			nota = 0.4*notesLabos[0] + 0.4*notesLabos[1] + 0.1*notesMisc[0] + 0.1*notesFinals[0];
+			break;
+
+		//Inteligència Artificial
+		case "IA":			
+			nota =  Math.max(0.2*notesParcials[0] + 0.4*notesFinals[0], 0.6*notesFinals[0]) + 0.35*notesLabos[0] + 0.05*notesMisc[0];
+			break;
+
+		//Introducció als Computadors
+		case "IC":
+			var notaTeoriaCont = 0.05*notesParcials[0] + 0.3*notesParcials[1] + 0.25*notesParcials[2] + 0.40*notesParcials[3];
+			var notaLaboratori = 0;
+			
+			for(i = 0; i < 6; i++){ 
+				notaLaboratori +=  notesLabos[i];
+			} notaLaboratori /= 6;
+
+			nota = 0.8*Math.max(notaTeoriaCont, notesFinals[0]) + 0.2*notaLaboratori;
+			break;
+
+		//Interacció i Disseny d'Interfícies
+		case "IDI": //En aquest cas el que vols fer és suicidar-te
+			nota = 0.25*notesParcials[0] + 0.50*notesParcials[1] + 0.25*notesLabos[0];
 			break;
 	}
 
