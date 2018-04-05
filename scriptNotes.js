@@ -404,6 +404,61 @@ function computaNota(){
 		case "IDI": //En aquest cas el que vols fer és suicidar-te
 			nota = 0.25*notesParcials[0] + 0.50*notesParcials[1] + 0.25*notesLabos[0];
 			break;
+
+		//Introudcció a l'Enginyeria del Software
+		case "IES":
+			nota = 0.25*notesParcials[0] + 0.15*notesParcials[1] + 0.25*notesParcials[2] + 0.1*notesLabos[0] + 0.15*notesLabos[1] + 0.1*notesMisc[0];
+			break;
+
+		//Internet Mòbil
+		case "IM":
+			nota = 0.8*Math.max(0.25*notesParcials[0] + 0.75*notesFinals[0], notesFinals[0]) + 0.2*notesLabos[0];
+			break;
+
+		//Lògica a la Informàtica
+		case "LI":
+			nota = 0.6*notesFinals[0] + 0.4*notesLabos[0];
+			break;
+
+		//Matemàtiques 1
+		case "M1":
+			nota = 0.2*notesLabos[0] + 0.35*Math.max(notesParcials[0], notesFinals[0]) + 0.45*notesFinals[1];
+			break;
+
+		//Matemàtiques 2
+		case "M2":
+			nota = Math.max(0.4*notesParcials[0] + 0.4*notesParcials[1], 0.8*notesFinals[0]) + 0.2*notesLabos[0]; 
+			break;
+
+		//Màrqueting a Internet
+		case "MI":
+			nota = 0.4*notesMisc[0] + 0.6*notesLabos[0];
+			break;
+
+		//Multiprocessadors
+		case "MP":
+			nota = Math.max(0.8*notesFinals[0], 0.15*notesParcials[0] + 0.65*notesFinals[0]) + 0.2*notesLabos[0];
+			break;
+
+		//Negoci Electrònic
+		case "NE":
+			nota = 0.2*notesMisc[0] + 0.125*notesLabos[0] + 0.125*notesLabos[1] + 0.3*notesLabos[2] + 0.25*notesFinals[0];
+			break;
+
+		//Projecte Aplicat d'Enginyeria
+		case "PAE":
+			nota = 0.25*notesLabos[0] + 0.25*notesLabos[1] + 0.5*notesFinals[0];
+			break;
+
+		//Programació i Arquitectures Paral·leles
+		case "PAP":
+			nota = 0.5*(0.6*notesParcials[0] + 0.4*notesParcials[1]) + 0.3*notesLabos[0] + 0.2*notesMisc[0];
+			break;
+
+		//Paral·lelisme
+		case "PAR":
+			nota = 0.7*(0.6*notesParcials[0] + 0.4*notesParcials[1]) + 0.3*notesLabos[0];
+			break;
 	}
 
 	//Fem un clear dels contenidors dels valors de les notes (per si tornem a recomputar-les)

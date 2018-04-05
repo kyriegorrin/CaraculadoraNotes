@@ -105,3 +105,51 @@ dictComentaris["IA"] = "Les diferents notes dels actes avaluatius són les segü
 						"[Nota auxiliar: nota del treball d'innovació]<br/>" +
 						"[Nota laboratori: nota de sessions de laboratori]<br/>" +
 						"[Nota final: nota de l'examen final]";
+
+dictComentaris["IES"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota parcial: nota dels controls fora de hora de classe]<br/>" +
+						"[Nota auxiliar: nota de participació]<br/>" +
+						"[Nota laboratori: nota dels controls en hores de classe]";
+
+dictComentaris["IM"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota parcial: nota del parcial]<br/>" +
+						"[Nota laboratori: nota de les classes de cas]<br/>" +
+						"[Nota final: nota de l'examen final]";						
+
+dictComentaris["LI"] = "No disposem de les ponderacions de cada examen, així que només posem les notes generals. <br/>" +
+						"Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota laboratori: nota final de laboratori]<br/>" +
+						"[Nota final: nota final de teoria]";						
+
+dictComentaris["M1"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota parcial: nota del parcial]<br/>" +
+						"[Nota laboratoris: nota del taller]<br/>" +
+						"[Nota final 1: nota de la primera part del final]<br/>" +
+						"[Nota final 2: nota de la segona part del final]";
+
+dictComentaris["MI"] =	"Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota auxiliar: nota de seguiment]<br/>" +
+						"[Nota laboratori: nota del pla de màrqueting]";						
+
+dictComentaris["NE"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota auxiliar: nota de seguiment]<br/>" +
+						"[Nota laboratori 1: nota del taller SCM]<br/>" +
+						"[Nota laboratori 2: nota del taller CRM]<br/>" +
+						"[Nota laboratori 3: nota del projecte E-Commerce]<br/>" +
+						"[Nota final: nota de l'examen final]";
+
+dictComentaris["PAE"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota laboratori 1: nota de la proposta del projecte]<br/>" +
+						"[Nota laboratori 2: nota de seguiment del projecte]<br/>" +
+						"[Nota final: nota de la defensa final del projecte]";
+
+dictComentaris["PAP"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota parcial 1: nota del primer parcial]<br/>" +
+						"[Nota parcial 2: nota del segon parcial]<br/>" +
+						"[Nota laboratori: nota final del laboratori]<br/>" +
+						"[Nota auxiliar: nota d'autonomia i motivació]";
+
+dictComentaris["PAR"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota parcial 1: nota del primer parcial]<br/>" +
+						"[Nota parcial 2: nota del segon parcial]<br/>" +
+						"[Nota laboratori: nota final del laboratori]";
