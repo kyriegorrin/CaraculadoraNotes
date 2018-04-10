@@ -153,3 +153,36 @@ dictComentaris["PAR"] = "Les diferents notes dels actes avaluatius són les seg�
 						"[Nota parcial 1: nota del primer parcial]<br/>" +
 						"[Nota parcial 2: nota del segon parcial]<br/>" +
 						"[Nota laboratori: nota final del laboratori]";
+
+dictComentaris["PCA"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota parcial: nota dels examens parcials]<br/>" +
+						"[Nota laboratori: nota de les sessions de laboratori puntuables]<br/>" +
+						"[Nota auxiliar 1: nota final de problemes de classe]<br/>" +
+						"[Nota auxiliar 2: nota del challenge]<br/>" +
+						"[Nota final: nota de l'examen final]";
+
+dictComentaris["PI"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota parcial: nota del control]<br/>" +
+						"[Nota laboratori 1: nota mitjana de les sessions de laboratori]<br/>" +
+						"[Nota laboratori 2: nota de l'examen de laboratori]<br/>" +
+						"[Nota auxiliar: nota de la presentació oral]<br/>" +
+						"[Nota final: nota de l'examen final]";
+
+dictComentaris["PRO1"] = "Si la nota total dels parcials és menor que 5, es computa la nota utilitzant la nota final.<br/>" +	
+						"En cas contrari, es computa amb els parcials.";
+
+dictComentaris["PRO2"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota parcials: nota dels exàmens parcials de teoria]<br/>" +
+						"[Nota laboratori 1: nota del control de laboratori]<br/>" +
+						"[Nota laboratori 2: nota de la pràctica<br/>" +
+						"[Nota laboratori 3: nota de l'examen de la pràctica]";
+
+dictComentaris["PROP"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota parcials: nota de l'examen parcial]<br/>" +
+						"[Nota laboratori 1: nota de la primera entrega]<br/>" +
+						"[Nota laboratori 2: nota de la segona entrega]";
+
+dictComentaris["PTI"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota auxiliar: nota de seguiment]<br/>" +
+						"[Nota laboratori 1: nota de les pràctiques guiades]<br/>" +
+						"[Nota laboratori 2: nota del projecte]";

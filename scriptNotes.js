@@ -459,6 +459,67 @@ function computaNota(){
 		case "PAR":
 			nota = 0.7*(0.6*notesParcials[0] + 0.4*notesParcials[1]) + 0.3*notesLabos[0];
 			break;
+
+		//Programació Conscient de l'Arquitectura
+		case "PCA":
+			var notaControls = 0.35*notesParcials[0] + 0.65*notesParcials[1];
+			var notaLaboratori = 0;
+			for(i = 0; i < 5; i++){
+				notaLaboratori += 0.2*notesLabos[i];
+			}
+			var notaChallenge = 0;
+			var notaExamens;
+			if(notaControls >= 5) {
+				notaChallenge = notesMisc[1];
+				notaExamens = Math.max(notaControls, notesFinals[0]);
+			}
+			else notaExamens = Math.max(0.25*notaControls + 0.75*notesFinals[0], notesFinals[0]);
+					
+			nota = Math.min(0.5*notaExamens + 0.1*notesMisc[0] + 0.4*notaLaboratori + 0.1*notaChallenge, 10);
+			break;
+
+		//Probabilitat i Estadística
+		case "PE":
+			break;
+		
+		//Projecte d'Enginyeria de Computadors
+		case "PEC":
+			break;
+
+		//Projecte d'Enginyeria del Software
+		case "PES":
+			break;
+
+		//Protocols d'Internet
+		case "PI":
+			nota = 0.2*(0.25*notesLabos[0] + 0.75*notesLabos[1]) + 0.1*notesParcials[0] + 0.1*notesMisc[0] + 0.6*notesFinals[0];	
+			break;
+
+		//Programació 1
+		case "PRO1":
+			nota = 0.25*notesParcials[0] + 0.3*notesParcials[1] + 0.45*notesParcials[2];
+			if(nota < 5) 
+				nota = Math.max(notesFinals[0], (notesFinals[0] + nota) / 2);
+			break;
+
+		//Programació 2
+		case "PRO2":
+			nota = 0.25*notesParcials[0] + 0.25*notesParcials[1] + 0.1*notesLabos[0] + 0.25*notesLabos[1] + 0.15*notesLabos[2];
+			break;
+
+		//Projecte de Programació 
+		case "PROP":
+			nota = 0.2*notesParcials[0] + 0.8*(0.4*notesLabos[0] + 0.6*notesLabos[1]);
+			break;
+
+		//Projecte de Sistemes d'Informació
+		case "PSI":
+			break;
+
+		//Projecte de Tecnologies de la Informació	
+		case "PTI":
+			nota = 0.25*notesLabos[0] + 0.6*notesLabos[1] + 0.15*notesMisc[0];
+			break;
 	}
 
 	//Fem un clear dels contenidors dels valors de les notes (per si tornem a recomputar-les)
