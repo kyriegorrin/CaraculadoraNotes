@@ -186,3 +186,27 @@ dictComentaris["PTI"] = "Les diferents notes dels actes avaluatius són les seg�
 						"[Nota auxiliar: nota de seguiment]<br/>" +
 						"[Nota laboratori 1: nota de les pràctiques guiades]<br/>" +
 						"[Nota laboratori 2: nota del projecte]";
+
+dictComentaris["ROB"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota parcial: nota final de tots els examens teòrics]<br/>" +
+						"[Nota laboratori: nota del laboratori]<br/>" +
+						"[Nota auxiliar 1: nota de problemes]<br/>" +
+						"[Nota auxiliar 2: nota de participació. Nota sobre 3.]";
+
+dictComentaris["SDX"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota parcial: nota del parcial. Si recuperes el parcial al final, posa la nota corresponent aquí]<br/>" +
+						"[Nota laboratori: nota dels seminaris de laboratori]<br/>" +
+						"[Nota auxiliar: nota dels informes de lectura i discussió d'articles]<br/>" +
+						"[Nota final: nota de l'examen final]";
+
+dictComentaris["SI"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota parcial: nota de cada control]<br/>" +
+						"[Nota laboratori 1: nota mitjana de les sessions de laboratori]<br/>" +
+						"[Nota laboratori 2: nota de l'examen de laboratori]<br/>" +
+						"[Nota auxiliar: nota de competència transversal]";
+
+dictComentaris["SID"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota parcial: nota del parcial. Si fas la recuperació al final, inserta la nota corresponent aquí.]<br/>" +
+						"[Nota laboratori: nota del laboratori]<br/>" +
+						"[Nota auxiliar: nota dels exercicis pràctics]<br/>" +
+						"[Nota final: nota de l'examen final]";

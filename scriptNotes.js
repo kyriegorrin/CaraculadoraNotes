@@ -520,6 +520,28 @@ function computaNota(){
 		case "PTI":
 			nota = 0.25*notesLabos[0] + 0.6*notesLabos[1] + 0.15*notesMisc[0];
 			break;
+
+		//Best Optativa (busca a Youtube)
+		case "ROB":
+			var notaParticipacio = notesMisc[1];
+			if(notaParticipacio > 3) notaParticipacio = 3;
+			nota = Math.min(10, 0.3*notesMisc[0] + 0.4*notesParcials[0] + 0.3*(notesLabos[0] + notaParticipacio));
+			break;
+
+		//Sistemes Distribuits en Xarxa
+		case "SDX":
+			nota = 0.3*notesParcials[0] + 0.3*notesFinals[0] + 0.15*notesMisc[0] + 0.25*notesLabos[0];
+			break;
+
+		//Seguretat Informàtica
+		case "SI":
+			nota = 0.7*((notesParcials[0] + notesParcials[1] + notesParcials[2])/3) + 0.25*(0.5*notesLabos[0] + 0.5*notesLabos[1]) + 0.05*notesMisc[0];
+			break;
+
+		//Sistemes Intel·ligents Distribuits
+		case "SID":
+			nota = 0.5*((notesParcials[0] + notesFinals[0])/2) + 0.2*notesMisc[0] + 0.3*notesLabos[0];
+			break;
 	}
 
 	//Fem un clear dels contenidors dels valors de les notes (per si tornem a recomputar-les)
