@@ -210,3 +210,54 @@ dictComentaris["SID"] = "Les diferents notes dels actes avaluatius són les seg�
 						"[Nota laboratori: nota del laboratori]<br/>" +
 						"[Nota auxiliar: nota dels exercicis pràctics]<br/>" +
 						"[Nota final: nota de l'examen final]";
+
+dictComentaris["SIM"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota laboratori 1: nota del treball pràctic amb eina de simulació]<br/>" +
+						"[Nota laboratori 2: nota mitjana dels diversos treballs pràctics]<br/>" +
+						"[Nota final: nota de l'examen final]";
+
+dictComentaris["SIO"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota parcial: nota de cada activitat avaluativa de bloc]<br/>" +
+						"[Nota laboratori: nota del cas pràctic]<br/>" +
+						"[Nota auxiliar 1: nota de participació als debats i presentacions]<br/>" +
+						"[Nota auxiliar 2: nota de competència transversal]";
+
+dictComentaris["SLDS"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota parcial: nota de l'examen teòric]<br/>" +
+						"[Nota laboratori 1: nota mitjana de les pràctiques]<br/>" +
+						"[Nota laboratori 2: nota del projecte]<br/>" +
+						"[Nota laboratori 3: nota de l'examen pràctic]<br/>" +
+						"[Nota auxiliar: nota de la presentació]";
+
+dictComentaris["SO"] = "Si la nota per avaluació continuada és inferior a 5, s'utilitzaran les notes dels finals per calcular-la.<br/>" +
+						"Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota parcial: nota de cada examen parcial]<br/>" +
+						"[Nota laboratori 1: nota del primer exercici puntuable]<br/>" +
+						"[Nota laboratori 2: nota del segon exercici puntuable]<br/>" +
+						"[Nota laboratori 3: nota mitja dels tests d'Atenea]<br/>" +
+						"[Nota final 1: nota del final de teoria]<br/>" +
+						"[Nota final 2: nota del final de laboratori]";
+
+dictComentaris["SO2"] = "Si la nota per avaluació continuada és inferior a 5, s'utilitzaran les notes dels finals per calcular-la.<br/>" +
+						"Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota parcial: nota de cada examen parcial]<br/>" +
+						"[Nota laboratori 1: nota del primer control de laboratori]<br/>" +
+						"[Nota laboratori 2: nota del segon control de laboratori]<br/>" +
+						"[Nota laboratori 3: nota de seguiment]<br/>" +
+						"[Nota auxiliar: nota de competència transversal, amb 0 <= nota <= 1]<br/>" +
+						"[Nota final 1: nota del final de teoria]<br/>" +
+						"[Nota final 2: nota del final de laboratori]";
+
+dictComentaris["SOA"] = "Si la nota per avaluació continuada és inferior a 5, s'utilitzaran les notes dels finals per calcular-la.<br/>" +
+						"Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota parcial: nota de cada examen parcial]<br/>" +
+						"[Nota laboratori 1: nota del primer control de laboratori]<br/>" +
+						"[Nota laboratori 2: nota del segon control de laboratori]<br/>" +
+						"[Nota laboratori 3: nota de seguiment]<br/>" +
+						"[Nota auxiliar: nota de competència transversal, amb 0 <= nota <= 1]<br/>" +
+						"[Nota final 1: nota del final de teoria]<br/>" +
+						"[Nota final 2: nota del final de laboratori]";
+
+dictComentaris["STR"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota parcial: nota de cada examen teòric]<br/>" +
+						"[Nota laboratori: nota final de pràctiques]";

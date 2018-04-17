@@ -542,6 +542,51 @@ function computaNota(){
 		case "SID":
 			nota = 0.5*((notesParcials[0] + notesFinals[0])/2) + 0.2*notesMisc[0] + 0.3*notesLabos[0];
 			break;
+
+		//Simulació
+		case "SIM":
+			nota = 0.3*notesLabos[0] + 0.5*notesLabos[1] + 0.2*notesFinals[0];
+			break;
+
+		//Sistemes d'Informació per a les Organitzacions
+		case "SIO":
+			var nac = 0;
+
+			for(i = 0; i < 5; i++){
+				nac += 0.2*notesParcials[i];
+			}
+			nota = 0.3*nac + 0.3*notesMisc[0] + 0.3*notesLabos[0] + 0.1*notesMisc[1];
+			break;
+
+		//Software Lliure i Desenvolupament Social
+		case "SLDS":
+			nota = 0.15*notesParcials[0] + 0.3*notesLabos[0] + 0.2*notesLabos[1] + 0.15*notesLabos[2] + 0.2*notesMisc[0]; 
+			break;
+
+		//Sistemes Operatius
+		case "SO":
+			nota = 0.5*(0.4*notesParcials[0] + 0.6*notesParcials[1]) + 0.5*(0.45*notesLabos[0] + 0.45*notesLabos[1] + 0.1*notesLabos[2]);
+			if(nota < 5) nota = 0.5*notesFinals[0] + 0.5*notesFinals[1];
+			break;
+
+		//Sistemes Operatius 2
+		case "SO2":
+			var notaT = 0.5*notesParcials[0] + 0.5*notesParcials[1];
+			var notaL = 0.35*notesLabos[0] + 0.35*notesLabos[1] + 0.30*notesLabos[2];
+			nota = (Math.max(0.5*notaT + 0.5*notaL, 0.5*notesFinals[0] + 0.5*notesFinals[1]) + notesMisc[0]) * (10.0/11.0);
+			break;
+		
+		//Sistemes Operatius 2 per a TI 
+		case "SOA":
+			var notaT = 0.5*notesParcials[0] + 0.5*notesParcials[1];
+			var notaL = 0.35*notesLabos[0] + 0.35*notesLabos[1] + 0.30*notesLabos[2];
+			nota = (Math.max(0.5*notaT + 0.5*notaL, 0.5*notesFinals[0] + 0.5*notesFinals[1]) + notesMisc[0]) * (10.0/11.0);
+			break;
+
+		//Sistemes en Temps Real
+		case "STR":
+			nota = 0.25*notesParcials[0] + 0.25*notesParcials[1] + 0.5*notesLabos[0];
+			break;
 	}
 
 	//Fem un clear dels contenidors dels valors de les notes (per si tornem a recomputar-les)
