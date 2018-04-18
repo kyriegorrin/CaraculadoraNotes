@@ -261,3 +261,48 @@ dictComentaris["SOA"] = "Si la nota per avaluació continuada és inferior a 5, 
 dictComentaris["STR"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
 						"[Nota parcial: nota de cada examen teòric]<br/>" +
 						"[Nota laboratori: nota final de pràctiques]";
+
+dictComentaris["TC"] = "Si la nota per avaluació contínua és inferior a 5, la nota de l'examen final s'utilitza.<br/>" +
+						"Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota parcial: nota de cada parcial]<br/>" +
+						"[Nota auxiliar: nota de les presentacions a pissarra]<br/>" +
+						"[Nota final: nota de l'examen final]";
+
+dictComentaris["TGA"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota laboratori: nota del laboratori + projecte]<br/>" +
+						"[Nota final: nota de l'examen final NO presencial]";
+
+dictComentaris["TXC"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota parcial: nota dels examens parcials]<br/>" +
+						"[Nota auxiliar 1: nota d'assistència a classe]<br/>" +
+						"[Nota auxiliar 2: nota de participació]<br/>" +
+						"[Nota auxiliar 3: nota del treball de recerca]";
+
+dictComentaris["VC"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota laboratori: nota dels exercicis de pràctiques]<br/>" +
+						"[Nota auxiliar: nota dels exercicis puntuables de teoria]";
+
+dictComentaris["VJ"] = "Si la nota per avaluació continuada és inferior a 5, s'utilitzaran les notes dels finals per calcular-la.<br/>" +
+						"Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota laboratori 1: nota del joc 2D]<br/>" +
+						"[Nota laboratori 2: nota del joc 3D]<br/>" +
+						"[Nota final: nota del examen final]";
+
+dictComentaris["WSE"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota parcial: nota de cada examen parcial]<br/>" +
+						"[Nota laboratori 1: nota dels treballs pràctics del curs]<br/>" +
+						"[Nota laboratori 2: nota del projecte de curs]<br/>" +
+						"[Nota auxiliar: nota de participació]";
+
+dictComentaris["XC"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota parcial: nota de cada examen parcial]<br/>" +
+						"[Nota laboratori 1: nota dels tests de laboratori]<br/>" +
+						"[Nota laboratori 2: nota del examen final de laboratori]<br/>" +
+						"[Nota final: nota de l'examen final (si aplica)]";
+
+dictComentaris["XC2"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota parcial: nota de cada examen parcial]<br/>" +
+						"[Nota laboratori 1: nota dels tests de laboratori]<br/>" +
+						"[Nota laboratori 2: nota del examen final de laboratori]<br/>" +
+						"[Nota auxiliar: nota de l'activitat complementària]<br/>" +
+						"[Nota final: nota de l'examen final]";

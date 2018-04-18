@@ -587,6 +587,53 @@ function computaNota(){
 		case "STR":
 			nota = 0.25*notesParcials[0] + 0.25*notesParcials[1] + 0.5*notesLabos[0];
 			break;
+
+		//Teoria de la Computació
+		case "TC":
+			nota = 0.8*((notesParcials[0] + notesParcials[1] + notesParcials[2])/3)+0.2*(notesMisc[0]);
+			if(nota < 5){
+				nota = Math.max(notesFinals[0], 0.5*notesFinals[0] + 
+					0.5*(0.8*((notesParcials[0] + notesParcials[1] + notesParcials[2])/3)+0.2*(notesMisc[0])));
+			}
+			break;
+		
+		//Targetes Gràfiques i Acceleradors
+		case "TGA":
+			nota = 0.5*notesFinals[0] + 0.5*notesLabos[0];
+			break;
+
+		//Tecnologies de Xarxes de Computadors
+		case "TXC":
+			nota = 0.1*notesMisc[0] + 0.1*notesMisc[1] + 0.65*(0.5*notesParcials[0] + 0.5*notesParcials[1]) + 0.15*notesMisc[2];
+			break;
+
+		//Visió per Computadors
+		case "VC":
+			nota = 0.7*notesLabos[0] + 0.3*notesMisc[0];
+			break;
+
+		//Videojocs
+		case "VJ":
+			nota = 0.2*notesLabos[0] + 0.5*notesLabos[1] + 0.3*notesFinals[0];
+			break;
+
+		//Habilitats d'Expressió Escrita en Anglès per a l'Enginyeria
+		case "WSE":
+			var notaT = Math.max(0.30*notesParcials[0] + 0.25*notesParcials[1], 0.25*notesParcials[0] + 0.3*notesParcials[1]);
+			nota = notaT + 0.20*notesLabos[0] + 0.20*notesLabos[1] + 0.05*notesMisc[0];
+			break;
+		
+		//Xarxes de Computadors
+		case "XC":
+			nota = 0.75*(Math.max(notesFinals[0], 0.4*notesParcials[0] + 0.4*notesParcials[1] + 0.2*notesParcials[2])) +
+				0.25*(0.25*notesLabos[0] + 0.75*notesLabos[1]);
+			break;
+
+		//Xarxes de Computadors 2
+		case "XC2":
+			nota = 0.6*(0.25*notesParcials[0] + 0.25*notesParcials[1] + 0.5*notesFinals[0]) + 
+				0.25*(0.5*notesLabos[0] + 0.5*notesLabos[1]) + 0.15*notesMisc[0];
+			break;
 	}
 
 	//Fem un clear dels contenidors dels valors de les notes (per si tornem a recomputar-les)
