@@ -360,7 +360,8 @@ function computaNota(){
 
 		//Física dels Dispositius de Memòria
 		case "FDM":
-			//TODO
+			var notaTeoria = (Math.max(notesParcials[0], notesFinals[0]) + notesFinals[1])/2;
+			nota = 0.5*notaTeoria + 0.25*notesMisc[0] + 0.10*notesLabos[0] + 0.15*notesMisc[1];
 			break;
 
 		//Fonaments Matemàtics
@@ -418,6 +419,15 @@ function computaNota(){
 		//Lògica a la Informàtica
 		case "LI":
 			nota = 0.6*notesFinals[0] + 0.4*notesLabos[0];
+			break;
+
+		//Llenguatges de Programació
+		case "LP":
+			var nota1 = 0.3*notesLabos[0] + 0.7*notesParcials[0];
+			var nota2 = 0.3*notesLabos[1] + 0.7*notesParcials[1];
+			var nota3 = 0.10*notesLabos[2] + 0.9*notesParcials[2];
+
+			nota = 0.2*nota1 + 0.3*nota2 + 0.4*nota3 + 0.1*notesMisc[0];
 			break;
 
 		//Matemàtiques 1

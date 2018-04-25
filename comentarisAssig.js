@@ -89,6 +89,14 @@ dictComentaris["ER"] = "Les diferents notes dels actes avaluatius són les segü
 						"[Nota laboratoris: nota del projecte]<br/>" +
 						"[Nota auxiliar: nota dels exercicis i qüestionaris]";
 
+dictComentaris["FDM"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota parcial: nota del parcial]<br/>" +
+						"[Nota laboratoris: nota mitjana de les pràctiques de laboratori]<br/>" +
+						"[Nota auxiliar 1: nota del treball de simulació]<br/>" +
+						"[Nota auxiliar 2: nota de problemes fets a classe]<br/>" +
+						"[Nota final 1: nota de la primera meitat del final]<br/>" +
+						"[Nota final 2: nota de la segona meitat del final]";
+
 dictComentaris["FM"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
 						"[Nota parcial: nota final de tots els teus parcials]<br/>" +
 						"[Nota auxiliar: nota final dels tallers]<br/>" +
@@ -120,6 +128,15 @@ dictComentaris["LI"] = "No disposem de les ponderacions de cada examen, així qu
 						"Les diferents notes dels actes avaluatius són les següents: <br/>" +
 						"[Nota laboratori: nota final de laboratori]<br/>" +
 						"[Nota final: nota final de teoria]";						
+
+dictComentaris["LP"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota parcial 1: nota de la prova CL]<br/>" +
+						"[Nota parcial 2: nota de la prova EP]<br/>" +
+						"[Nota parcial 3: nota de la prova EF]<br/>" +
+						"[Nota laboratori 1: nota de la prova PCL]<br/>" +
+						"[Nota laboratori 2: nota de la prova PEP]<br/>" +
+						"[Nota laboratori 3: nota de la prova PEF]<br/>" +
+						"[Nota auxiliar: nota de l'avaluació TC1]";
 
 dictComentaris["M1"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
 						"[Nota parcial: nota del parcial]<br/>" +
