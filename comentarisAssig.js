@@ -178,6 +178,12 @@ dictComentaris["PCA"] = "Les diferents notes dels actes avaluatius són les seg�
 						"[Nota auxiliar 2: nota del challenge]<br/>" +
 						"[Nota final: nota de l'examen final]";
 
+dictComentaris["PE"] = "Per a aquesta assignatura, es computarà la nota amb el final només si s'omple la casella corresponent.<br/>" +
+						"Les diferents notes dels actes avaluatius són les següents: <br/>" +
+						"[Nota parcial: nota de cada bloc avaluatiu]<br/>" +
+						"[Nota auxiliar: nota de seguiment de cada bloc, sent 1 <= nota <= 1.05]<br/>" +
+						"[Nota final: nota de l'examen final]";
+
 dictComentaris["PI"] = "Les diferents notes dels actes avaluatius són les següents: <br/>" +
 						"[Nota parcial: nota del control]<br/>" +
 						"[Nota laboratori 1: nota mitjana de les sessions de laboratori]<br/>" +

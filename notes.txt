@@ -1,18 +1,10 @@
-Idea: existeix funcio de generacio de inputs (genera tants quadres de input com 
-evaluacions hi hagi per la assignatura).
-
-Tenim 3 vectors de 10 posicions cada un (perque no sabem quants actes de cada acte
-avaluatiu hi ha), un per a cada tipus: teorics, laboratori i un extra de miscellania.
-
-
 WARNING 1: Alguna assignatura no està feta perque et fa molt de pal computar les 3000 polles que te de moment.
 Fes-ho quan no tinguis el dia tonto.
 	Llista de joputas pendents:
-		-PE (4000 modificadors i osties)
 		-PEC (pot ser en Q1 o Q2)
+			ARA PEC PASSA A SER PEC-AC I PEC-ESAI
 		-PES (un altre que basicament vol dir que posa la nota que li surt de la polla)
 		-PSI (començo a odiar totes les assignatures de projecte ja)
 
 WARNING 2: Recorda indicar a la versió final que totes les notes són sobre 10 si no es diu el contrari.
 
-WHAT TO DO NEXT DAY: continua afegint assignatures.

@@ -490,6 +490,24 @@ function computaNota(){
 
 		//Probabilitat i Estadística
 		case "PE":
+			//Apliquem factors de seguiment a les notes
+			for(i = 0; i < 6; ++i){
+				notesParcials[i] = notesParcials[i] * notesMisc[i];	
+			}
+			
+			//Cas de que es presenta al final
+			if(/*notesFinals[0] != 0 ||*/ !isNaN(notesFinals[0])){
+				nota = Math.max(notesFinals[0], (75*notesFinals[0] + 10*notesParcials[6])/85);
+				console.log("Dins dels finals: " + nota);
+			}
+			else {
+				nota = 0;
+				for(i = 0; i < 6; ++i){
+					nota += (10 + i)*notesParcials[i];
+				}
+				nota = (nota + (10*notesParcials[6]))/85;
+				console.log("Dins dels parcials: " + nota);
+			}
 			break;
 		
 		//Projecte d'Enginyeria de Computadors
@@ -651,8 +669,5 @@ function computaNota(){
 
 	//Mostrem nota
 	document.getElementById("div_nota").innerHTML = nota.toFixed(2);	
-
-	//DEBUGGING DE VARIABLES GLOBALS
-	console.log(inputParcials.length);
 }
 
